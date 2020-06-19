@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EstateApp.Data.Migrations.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200607111125_initial Application Migration")]
-    partial class initialApplicationMigration
+    [Migration("20200619211121_Initial Application Migration")]
+    partial class InitialApplicationMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EstateApp.Data.Migrations
 {
     [DbContext(typeof(AuthenticationDbContext))]
-    [Migration("20200607110957_initial dev Authentication Migration")]
-    partial class initialdevAuthenticationMigration
+    [Migration("20200619210955_Initial Authentication Migration")]
+    partial class InitialAuthenticationMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
