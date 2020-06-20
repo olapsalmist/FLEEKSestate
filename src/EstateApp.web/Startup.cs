@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using EsatateApp.Data.DatabaseContexts.ApplicationDbContext;
 using EsatateApp.Data.DatabaseContexts.AuthenticationDbContext;
 using EsatateApp.Data.Entities;
+using EstateApp.web.Interfaces;
+using EstateApp.web.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -57,6 +59,7 @@ namespace EstateApp.web
             });
 
             services.AddControllersWithViews();
+            services.AddTransient<IAccountsService, AccountsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
